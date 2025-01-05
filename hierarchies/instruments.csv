@@ -1,0 +1,89 @@
+synonyms;abbr;instrument;lvl5;lvl4;lvl3;lvl2;lvl1
+singing, voice, human voice, lead vocals, rapping, yodeling;voc;Vocals;;;; Voice; Instrument
+backing singer, backup singer, backup vocals, background singer, background vocals, harmony singer, harmony vocals;bvoc;Backing Vocals;;;; Voice; Instrument
+grand piano,  piano, pianoforte, piano forte, prepared piano;p;Piano;;; Keys; Strings; Instrument
+e-piano, digital piano, fender rhodes, rhodes piano;ep;Electric piano;;; Keys; Strings; Instrument
+guitar family;g;Guitar;;; Plucked; Strings; Instrument
+e-guitar;eg;Electric guitar;; Guitar; Plucked; Strings; Instrument
+classical guitar, flamenco guitar, 12-string guitar, twelve-string guitar;acg;Acoustic guitar;; Guitar; Plucked; Strings; Instrument
+lap slide guitar;s-g;Slide guitar;; Guitar; Plucked; Strings; Instrument
+dobro, lap steel guitar;stg;Steel guitar;; Guitar; Plucked; Strings; Instrument
+;b;Bass; Electric guitar; Guitar; Plucked; Strings; Instrument
+e-bass, electric bass, electric bass guitar, acoustic bass guitar;eb;Bass guitar; Electric guitar; Guitar; Plucked; Strings; Instrument
+contra bass, contrabass, upright bass;cb;Double bass;;; Bowed; Strings; Instrument
+keyboard, keyboard instrument, midi keyboard, musical keyboard, electronic keyboard;key;Keyboards;;; Keys; Strings; Instrument
+electronic organ, electric organ, hammond organ;org;Organ;;; Woodwind; Wind; Instrument
+schwyzerörgeli, button accordion, concertina;acc;Accordion;;; Woodwind; Wind; Instrument
+alpenhorn;alp;Alphorn;;; Woodwind; Wind; Instrument
+;ban;Bandoneon;;; Woodwind; Wind; Instrument
+;bj;Banjo;;; Plucked; Strings; Instrument
+Fagot;bsn;Bassoon;;; Woodwind; Wind; Instrument
+;cl;Clarinet;;; Woodwind; Wind; Instrument
+;bcl;Bass Clarinet;; Clarinet; Woodwind; Wind; Instrument
+;acl;Alto Clarinet;; Clarinet; Woodwind; Wind; Instrument
+;scl;Soprano Clarinet;; Clarinet; Woodwind; Wind; Instrument
+clavichord;clv;Clavinet;;; Keys; Strings; Instrument
+;dgdo;Didgeridoo;;; Woodwind; Wind; Instrument
+;eh;English horn;;; Woodwind; Wind; Instrument
+;eu;Euphonium;;; Brass; Wind; Instrument
+flügelhorn, flugel-horn;fh;Flugelhorn;;; Brass; Wind; Instrument
+waldhorn;frh;French horn;;; Brass; Wind; Instrument
+;h;Harmonica;;; Woodwind; Wind; Instrument
+;har;Harmonium;;; Woodwind; Wind; Instrument
+;hrp;Harp;;; Plucked; Strings; Instrument
+;hps;Harpsichord;;; Keys; Strings; Instrument
+alto flute, bass flute;fl;Flute;;; Woodwind; Wind; Instrument
+;lut;Lute;;; Plucked; Strings; Instrument
+mandola, electric mandolin;man;Mandolin;;; Plucked; Strings; Instrument
+mbira;kal;Kalimba;;; Idiophone; Percussion; Instrument
+;mar;Marimba;;; Idiophone; Percussion; Instrument
+;ob;Oboe;;; Woodwind; Wind; Instrument
+;oud;Oud;;; Plucked; Strings; Instrument
+;pan;Pan flute;;; Woodwind; Wind; Instrument
+;pic;Piccolo;;; Woodwind; Wind; Instrument
+;p-o;Pipe organ;;; Woodwind; Wind; Instrument
+;rec;Recorder;;; Woodwind; Wind; Instrument
+sax, saxophones, reeds;sax;Saxophone;;; Woodwind; Wind; Instrument
+sopranino saxophone;sss;Sopranino sax;; Saxophone; Woodwind; Wind; Instrument
+soprano saxophone;ss;Soprano sax;; Saxophone; Woodwind; Wind; Instrument
+alto saxophone;as;Alto sax;; Saxophone; Woodwind; Wind; Instrument
+tenor saxophone;ts;Tenor sax;; Saxophone; Woodwind; Wind; Instrument
+bariton saxophone, baritone saxophone;bs;Bariton sax;; Saxophone; Woodwind; Wind; Instrument
+;ssph;Sousaphone;;; Brass; Wind; Instrument
+;sit;Sitar;;; Plucked; Strings; Instrument
+Sampler, Moog, Minimoog;syn;Synthesizer;;;; Electronic; Instrument
+;gsyn;Guitar Synthesizer;;; Synthesizer; Electronic; Instrument
+;bsyn;Bass Synthesizer;;; Synthesizer; Electronic; Instrument
+;th;Tenor horn;;; Brass; Wind; Instrument
+;tr;Trumpet;;; Brass; Wind; Instrument
+pocket trumpet, cornett;cor;Cornet;;; Brass; Wind; Instrument
+valve trombone, bass trombone;tb;Trombone;;; Brass; Wind; Instrument
+bass tuba;tu;Tuba;;; Brass; Wind; Instrument
+turntable, turntablism, phonograph;ttbl;Turntables;;;; Electronic; Instrument
+;dr machine;Drum Machine;;; Synthesizer; Electronic; Instrument
+;sampler;Sampler;;; Synthesizer; Electronic; Instrument
+;EWI;Electronic Wind Instrument;;;; Electronic; Instrument
+concert ukulele, soprano ukulele, tenor ukulele, baritone ukulele, bass ukulele;uke;Ukulele;;; Plucked; Strings; Instrument
+;vib;Vibraphone;;; Idiophone; Percussion; Instrument
+;vl;Viola;;; Bowed; Strings; Instrument
+;gam;Viola da gamba;;; Bowed; Strings; Instrument
+fiddle, electric violin;vn;Violin;;; Bowed; Strings; Instrument
+cello;vc;Violoncello;;; Bowed; Strings; Instrument
+;wb;Washboard;;; Idiophone; Percussion; Instrument
+;xyl;Xylophone;;; Idiophone; Percussion; Instrument
+zither;zth;Zyther;;; Plucked; Strings; Instrument
+drum kit, drum set, drums (drum set), membranophone;dr;Drums;;;; Percussion; Instrument
+bongo;bgo;Bongos;;; Membranophone; Percussion; Instrument
+cajon;cjn;Cajón;;; Membranophone; Percussion; Instrument
+conga;cng;Congas;;; Membranophone; Percussion; Instrument
+cowbells;cwb;Cowbell;;; Idiophone; Percussion; Instrument
+cymbal;cym;Cymbals;;; Idiophone; Percussion; Instrument
+;djm;Djembe;;; Membranophone; Percussion; Instrument
+steel drum, steelpan;st-d;Steel drums;;; Idiophone; Percussion; Instrument
+tabla;tab;Tablas;;; Membranophone; Percussion; Instrument
+tambourine;tam;Tamborine;;; Membranophone; Percussion; Instrument
+;tmb;Tamboura;;; Plucked; Strings; Instrument
+;tim;Timbales;;; Membranophone; Percussion; Instrument
+;tri;Triangle;;; Idiophone; Percussion; Instrument
+clapping, handclaps;clap;Handclap;;; Idiophone; Percussion; Instrument
+;wb;Woodblock;;; Idiophone; Percussion; Instrument

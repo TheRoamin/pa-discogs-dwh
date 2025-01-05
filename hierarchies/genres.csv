@@ -1,0 +1,250 @@
+sub;short;name;lvl2;lvl1
+Classic;Classic;Classical;Popular Music;Genre
+Baroque;Classic;Classical;Popular Music;Genre
+Chamber;Classic;Classical;Popular Music;Genre
+Chant;Classic;Classical;Popular Music;Genre
+Choral;Classic;Classical;Popular Music;Genre
+Aria;Classic;Classical;Popular Music;Genre
+Impressionist;Classic;Classical;Popular Music;Genre
+Medieval;Classic;Classical;Popular Music;Genre
+Minimal;Classic;Classical;Popular Music;Genre
+Opera;Classic;Classical;Popular Music;Genre
+Operetta;Classic;Classical;Popular Music;Genre
+Orchestral;Classic;Classical;Popular Music;Genre
+Renaissance;Classic;Classical;Popular Music;Genre
+Romantic;Classic;Classical;Popular Music;Genre
+Symphonic;Classic;Classical;Popular Music;Genre
+Neo-Classical;Classic;Classical;Popular Music;Genre
+Avant-garde;Classic;Classical;Popular Music;Genre
+Early Music;Classic;Classical;Popular Music;Genre
+Modern Composition;Classic;Classical;Popular Music;Genre
+Musique Concrète;Classic;Classical;Popular Music;Genre
+Twelve tone;Classic;Classical;Popular Music;Genre
+Wedding;Classic;Classical;Popular Music;Genre
+Boogie Woogie;Blues;Blues;Popular Music;Genre
+Jump;Blues;Blues;Popular Music;Genre
+Big Band;Jazz;Jazz;Popular Music;Genre
+Cool;Jazz;Jazz;Popular Music;Genre
+Dixieland;Jazz;Jazz;Popular Music;Genre
+Fusion;Jazz;Jazz;Popular Music;Genre
+Bebop;Jazz;Jazz;Popular Music;Genre
+Hard-Bop;Jazz;Jazz;Popular Music;Genre
+Post-Bop;Jazz;Jazz;Popular Music;Genre
+Ragtime;Jazz;Jazz;Popular Music;Genre
+Standards;Jazz;Jazz;Popular Music;Genre
+Swing;Jazz;Jazz;Popular Music;Genre
+Free;Jazz;Jazz;Popular Music;Genre
+Improvisation;Jazz;Jazz;Popular Music;Genre
+Gypsy;Jazz;Jazz;Popular Music;Genre
+Jazz-Rock;Jazz;Jazz;Popular Music;Genre
+Jazz-Funk;Jazz;Jazz;Popular Music;Genre
+Britpop;Pop;Pop;Popular Music;Genre
+Teen;Pop;Pop;Popular Music;Genre
+Synth;Pop;Pop;Popular Music;Genre
+Adult Contemporary;Pop;Pop;Popular Music;Genre
+Yé-yé;Pop;Pop;Popular Music;Genre
+Acid;Electro;Electronic;Popular Music;Genre
+Ambient;Electro;Electronic;Popular Music;Genre
+Club;Electro;Electronic;Popular Music;Genre
+Industrial;Electro;Electronic;Popular Music;Genre
+Downtempo;Electro;Electronic;Popular Music;Genre
+Experimental;Electro;Electronic;Popular Music;Genre
+Electronica;Electro;Electronic;Popular Music;Genre
+Electro;Electro;Electronic;Popular Music;Genre
+EBM;Electro;Electronic;Popular Music;Genre
+Ghetto;Electro;Electronic;Popular Music;Genre
+Abstract;Electro;Electronic;Popular Music;Genre
+Illbient;Electro;Electronic;Popular Music;Genre
+Leftfield;Electro;Electronic;Popular Music;Genre
+Synth-pop;Electro;Electronic;Popular Music;Genre
+Breakbeat;EDM;Dance;Popular Music;Genre
+Disco;EDM;Dance;Popular Music;Genre
+Dubstep;EDM;Dance;Popular Music;Genre
+House;EDM;Dance;Popular Music;Genre
+Hip-House;EDM;Dance;Popular Music;Genre
+Techno;EDM;Dance;Popular Music;Genre
+Trance;EDM;Dance;Popular Music;Genre
+Goa;EDM;Dance;Popular Music;Genre
+Jungle;EDM;Dance;Popular Music;Genre
+Tribal;EDM;Dance;Popular Music;Genre
+Drum’n’Bass;EDM;Dance;Popular Music;Genre
+Eurodance;EDM;Dance;Popular Music;Genre
+Eurobeat;EDM;Dance;Popular Music;Genre
+Trip Hop;EDM;Dance;Popular Music;Genre
+IDM;EDM;Dance;Popular Music;Genre
+Rave;EDM;Dance;Popular Music;Genre
+Gabber;EDM;Dance;Popular Music;Genre
+Glitch;EDM;Dance;Popular Music;Genre
+Breaks;EDM;Dance;Popular Music;Genre
+Breakcore;EDM;Dance;Popular Music;Genre
+Hardcore;EDM;Dance;Popular Music;Genre
+Speedcore;EDM;Dance;Popular Music;Genre
+Hi-NRG;EDM;Dance;Popular Music;Genre
+Rap;Hip-Hop;Hip-Hop/Rap;Popular Music;Genre
+Rapping;Hip-Hop;Hip-Hop/Rap;Popular Music;Genre
+Hip-Hop;Hip-Hop;Hip-Hop/Rap;Popular Music;Genre
+Grime;Hip-Hop;Hip-Hop/Rap;Popular Music;Genre
+Bounce;Hip-Hop;Hip-Hop/Rap;Popular Music;Genre
+Gangsta;Hip-Hop;Hip-Hop/Rap;Popular Music;Genre
+Dirty South;Hip-Hop;Hip-Hop/Rap;Popular Music;Genre
+Reggaeton;Hip-Hop;Hip-Hop/Rap;Popular Music;Genre
+Turntablism;Hip-Hop;Hip-Hop/Rap;Popular Music;Genre
+Rhythm’n’Blues;R&B;R&B/Soul;Popular Music;Genre
+Soul;R&B;R&B/Soul;Popular Music;Genre
+Funk;R&B;R&B/Soul;Popular Music;Genre
+Doo-Wop;R&B;R&B/Soul;Popular Music;Genre
+Motown;R&B;R&B/Soul;Popular Music;Genre
+Neo-Soul;R&B;R&B/Soul;Popular Music;Genre
+Quiet Storm;R&B;R&B/Soul;Popular Music;Genre
+Dancehall;Reggae;Reggae;Popular Music;Genre
+Dub;Reggae;Reggae;Popular Music;Genre
+Ska;Reggae;Reggae;Popular Music;Genre
+Ragga;Reggae;Reggae;Popular Music;Genre
+Rocksteady;Reggae;Reggae;Popular Music;Genre
+Metal;Rock;Rock;Popular Music;Genre
+Hard Rock;Rock;Rock;Popular Music;Genre
+Glam Rock;Rock;Rock;Popular Music;Genre
+Psychedelic;Rock;Rock;Popular Music;Genre
+Rock’n’Roll;Rock;Rock;Popular Music;Genre
+Rockabilly;Rock;Rock;Popular Music;Genre
+Surf;Rock;Rock;Popular Music;Genre
+Tex Mex;Rock;Rock;Popular Music;Genre
+Emo;Rock;Rock;Popular Music;Genre
+British Invasion;Rock;Rock;Popular Music;Genre
+Heavy Metal;Rock;Rock;Popular Music;Genre
+Death Metal;Rock;Rock;Popular Music;Genre
+Black Metal;Rock;Rock;Popular Music;Genre
+Grind;Rock;Rock;Popular Music;Genre
+Thrash;Rock;Rock;Popular Music;Genre
+Alternative Rock;Alt-rock;Alternative;Popular Music;Genre
+Grunge;Alt-rock;Alternative;Popular Music;Genre
+Garage;Alt-rock;Alternative;Popular Music;Genre
+Gothic Rock;Alt-rock;Alternative;Popular Music;Genre
+Punk;Alt-rock;Alternative;Popular Music;Genre
+Indie;Alt-rock;Alternative;Popular Music;Genre
+New Wave;Alt-rock;Alternative;Popular Music;Genre
+College;Alt-rock;Alternative;Popular Music;Genre
+Anarcho;Alt-rock;Alternative;Popular Music;Genre
+Noise;Alt-rock;Alternative;Popular Music;Genre
+NDW;Alt-rock;Alternative;Popular Music;Genre
+Latino;Latin;Latin;Popular Music;Genre
+Afro-Cuban;Latin;Latin;Popular Music;Genre
+Bolero;Latin;Latin;Popular Music;Genre
+Boogaloo;Latin;Latin;Popular Music;Genre
+Danzón;Latin;Latin;Popular Music;Genre
+Son cubano;Latin;Latin;Popular Music;Genre
+Son montuno;Latin;Latin;Popular Music;Genre
+Salsa;Latin;Latin;Popular Music;Genre
+Tropical;Latin;Latin;Popular Music;Genre
+Calypso;Latin;Latin;Popular Music;Genre
+Cha-cha-cha;Latin;Latin;Popular Music;Genre
+Guaracha;Latin;Latin;Popular Music;Genre
+Lambada;Latin;Latin;Popular Music;Genre
+Mambo;Latin;Latin;Popular Music;Genre
+Mariachi;Latin;Latin;Popular Music;Genre
+Porro;Latin;Latin;Popular Music;Genre
+Rumba;Latin;Latin;Popular Music;Genre
+Raíces;Latin;Latin;Popular Music;Genre
+Soca;Latin;Latin;Popular Music;Genre
+Timba;Latin;Latin;Popular Music;Genre
+Trova;Latin;Latin;Popular Music;Genre
+Mexicano;Latin;Latin;Popular Music;Genre
+Norteño;Latin;Latin;Popular Music;Genre
+Bachata;Latin;Latin;Popular Music;Genre
+Merengue;Latin;Latin;Popular Music;Genre
+Axé;Brazil;Brazilian;Popular Music;Genre
+Batucada;Brazil;Brazilian;Popular Music;Genre
+Bossa Nova;Brazil;Brazilian;Popular Music;Genre
+Choro;Brazil;Brazilian;Popular Music;Genre
+Forró;Brazil;Brazilian;Popular Music;Genre
+Frevo;Brazil;Brazilian;Popular Music;Genre
+MPB;Brazil;Brazilian;Popular Music;Genre
+Pagode;Brazil;Brazilian;Popular Music;Genre
+Samba;Brazil;Brazilian;Popular Music;Genre
+Sertanejo;Brazil;Brazilian;Popular Music;Genre
+Baile Funk;Brazil;Brazilian;Popular Music;Genre
+Aboriginal;World;World;Popular Music;Genre
+African;World;World;Popular Music;Genre
+Afrobeat;World;World;Popular Music;Genre
+Asia;World;World;Popular Music;Genre
+Highlife;World;World;Popular Music;Genre
+Indian;World;World;Popular Music;Genre
+Japan;World;World;Popular Music;Genre
+Cajun;World;World;Popular Music;Genre
+Zydeco;World;World;Popular Music;Genre
+Carribean;World;World;Popular Music;Genre
+Soukous;World;World;Popular Music;Genre
+Tango;World;World;Popular Music;Genre
+Fado;World;World;Popular Music;Genre
+Flamenco;World;World;Popular Music;Genre
+Middle East;World;World;Popular Music;Genre
+Hawaii;World;World;Popular Music;Genre
+Raï;World;World;Popular Music;Genre
+Singer/Songwriter;Folk;Folk;Popular Music;Genre
+Acoustic;Folk;Folk;Popular Music;Genre
+Traditional;Folk;Folk;Popular Music;Genre
+Celtic;Folk;Folk;Popular Music;Genre
+Klezmer;Folk;Folk;Popular Music;Genre
+Polka;Folk;Folk;Popular Music;Genre
+Worldbeat;Folk;Folk;Popular Music;Genre
+Chanson;Folk;Folk;Popular Music;Genre
+Volksmusik;Folk;Folk;Popular Music;Genre
+Americana;Country;Country;Popular Music;Genre
+Bluegrass;Country;Country;Popular Music;Genre
+Hillbilly;Country;Country;Popular Music;Genre
+Honky Tonk;Country;Country;Popular Music;Genre
+Cowboy;Country;Country;Popular Music;Genre
+Chill;Lounge;Lounge;Popular Music;Genre
+Easy Listening;Lounge;Lounge;Popular Music;Genre
+Schlager;Lounge;Lounge;Popular Music;Genre
+Cinema;OST;Soundtrack;Popular Music;Genre
+Film;OST;Soundtrack;Popular Music;Genre
+Musical;OST;Soundtrack;Popular Music;Genre
+Original Score;OST;Soundtrack;Popular Music;Genre
+TV;OST;Soundtrack;Popular Music;Genre
+Gospel;Religious;Religious;Popular Music;Genre
+Spiritual;Religious;Religious;Popular Music;Genre
+Sacred;Religious;Religious;Popular Music;Genre
+Liturgical;Religious;Religious;Popular Music;Genre
+Praise;Religious;Religious;Popular Music;Genre
+Worship;Religious;Religious;Popular Music;Genre
+Christian;Religious;Religious;Popular Music;Genre
+CCM;Religious;Religious;Popular Music;Genre
+Christmas;Religious;Religious;Popular Music;Genre
+Eastern;Religious;Religious;Popular Music;Genre
+Thanksgiving;Religious;Religious;Popular Music;Genre
+Gregorial;Religious;Religious;Popular Music;Genre
+Hymn;Religious;Religious;Popular Music;Genre
+Islamic;Religious;Religious;Popular Music;Genre
+Sikh;Religious;Religious;Popular Music;Genre
+Jewish;Religious;Religious;Popular Music;Genre
+Hindu;Religious;Religious;Popular Music;Genre
+Buddhist;Religious;Religious;Popular Music;Genre
+Shintō;Religious;Religious;Popular Music;Genre
+Shinto;Religious;Religious;Popular Music;Genre
+Chanukah;Religious;Religious;Popular Music;Genre
+Prayer;Religious;Religious;Popular Music;Genre
+Meditation;New Age;New Age;Popular Music;Genre
+Healing;New Age;New Age;Popular Music;Genre
+Therapy;New Age;New Age;Popular Music;Genre
+Nature;New Age;New Age;Popular Music;Genre
+Relaxation;New Age;New Age;Popular Music;Genre
+Environmental;New Age;New Age;Popular Music;Genre
+March;Brass;Brass;Popular Music;Genre
+Military;Brass;Brass;Popular Music;Genre
+Pipe’n’Drum;Brass;Brass;Popular Music;Genre
+Story;Speech;Spoken Word;Non-music;Genre
+Comedy;Speech;Spoken Word;Non-music;Genre
+Novelty;Speech;Spoken Word;Non-music;Genre
+Poetry;Speech;Spoken Word;Non-music;Genre
+Interview;Speech;Spoken Word;Non-music;Genre
+Dialogue;Speech;Spoken Word;Non-music;Genre
+Standup;Speech;Spoken Word;Non-music;Genre
+Audiobook;Speech;Spoken Word;Non-music;Genre
+Sound Effects;Sound;Sounds;Non-music;Genre
+Special Effects;Sound;Sounds;Non-music;Genre
+Instrument Samples;Sound;Sounds;Non-music;Genre
+Ring-tones;Sound;Sounds;Non-music;Genre
+Lullabies;Children's;Children's Music;Popular Music;Genre
+Sing-along;Children's;Children's Music;Popular Music;Genre
+Disney;Children's;Children's Music;Popular Music;Genre

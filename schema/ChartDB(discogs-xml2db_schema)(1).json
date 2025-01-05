@@ -1,0 +1,2917 @@
+{
+  "id": "0",
+  "name": "discogs-xml2db_schema",
+  "createdAt": "2025-01-05T16:06:50.014Z",
+  "updatedAt": "2025-01-05T16:06:50.014Z",
+  "databaseType": "postgresql",
+  "tables": [
+    {
+      "id": "1",
+      "name": "master_genre",
+      "schema": "public",
+      "x": 1314.5723787038967,
+      "y": -321.2782679717827,
+      "fields": [
+        {
+          "id": "2",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('master_genre_id_seq'::regclass)",
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "3",
+          "name": "master_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "4",
+          "name": "genre",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        }
+      ],
+      "indexes": [
+        {
+          "id": "5",
+          "name": "master_genre_pkey",
+          "unique": true,
+          "fieldIds": [
+            "2"
+          ],
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "6",
+          "name": "master_genre_idx_master",
+          "unique": false,
+          "fieldIds": [
+            "3"
+          ],
+          "createdAt": 1730286915591
+        }
+      ],
+      "color": "#8a61f5",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915591,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "7",
+      "name": "artist_image",
+      "schema": "public",
+      "x": 1299.1051836678325,
+      "y": -623.9496757221258,
+      "fields": [
+        {
+          "id": "8",
+          "name": "artist_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "9",
+          "name": "type",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "10",
+          "name": "width",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "11",
+          "name": "height",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        }
+      ],
+      "indexes": [],
+      "color": "#ff9f74",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915588,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "12",
+      "name": "master_artist",
+      "schema": "public",
+      "x": 1656.1435834025347,
+      "y": 100,
+      "fields": [
+        {
+          "id": "13",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('master_artist_id_seq'::regclass)",
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "14",
+          "name": "master_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "15",
+          "name": "artist_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "16",
+          "name": "artist_name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "17",
+          "name": "anv",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "18",
+          "name": "position",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "19",
+          "name": "join_string",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "20",
+          "name": "role",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        }
+      ],
+      "indexes": [
+        {
+          "id": "21",
+          "name": "master_artist_pkey",
+          "unique": true,
+          "fieldIds": [
+            "13"
+          ],
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "22",
+          "name": "master_artist_idx_master",
+          "unique": false,
+          "fieldIds": [
+            "14"
+          ],
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "23",
+          "name": "master_artist_idx_artist",
+          "unique": false,
+          "fieldIds": [
+            "15"
+          ],
+          "createdAt": 1730286915589
+        }
+      ],
+      "color": "#8a61f5",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915589,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "24",
+      "name": "artist_alias",
+      "schema": "public",
+      "x": 495.70459303197765,
+      "y": -1068.2555654862454,
+      "fields": [
+        {
+          "id": "25",
+          "name": "artist_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915587
+        },
+        {
+          "id": "26",
+          "name": "alias_name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915587
+        },
+        {
+          "id": "27",
+          "name": "alias_artist_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915587
+        }
+      ],
+      "indexes": [
+        {
+          "id": "28",
+          "name": "artist_alias_idx_artist",
+          "unique": false,
+          "fieldIds": [
+            "25"
+          ],
+          "createdAt": 1730286915587
+        }
+      ],
+      "color": "#ff6b8a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915587,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "29",
+      "name": "master_style",
+      "schema": "public",
+      "x": 1626.0892460797463,
+      "y": -319.869234416336,
+      "fields": [
+        {
+          "id": "30",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('master_style_id_seq'::regclass)",
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "31",
+          "name": "master_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "32",
+          "name": "style",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915589
+        }
+      ],
+      "indexes": [
+        {
+          "id": "33",
+          "name": "master_style_idx_master",
+          "unique": false,
+          "fieldIds": [
+            "31"
+          ],
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "34",
+          "name": "master_style_pkey",
+          "unique": true,
+          "fieldIds": [
+            "30"
+          ],
+          "createdAt": 1730286915589
+        }
+      ],
+      "color": "#8eb7ff",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915589,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "35",
+      "name": "release_label",
+      "schema": "public",
+      "x": 463.68264148455046,
+      "y": 611.4126622798299,
+      "fields": [
+        {
+          "id": "36",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('release_label_id_seq'::regclass)",
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "37",
+          "name": "release_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "38",
+          "name": "label_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "39",
+          "name": "label_name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "40",
+          "name": "catno",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        }
+      ],
+      "indexes": [
+        {
+          "id": "41",
+          "name": "release_label_idx_release",
+          "unique": false,
+          "fieldIds": [
+            "37"
+          ],
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "42",
+          "name": "release_label_idx_label",
+          "unique": false,
+          "fieldIds": [
+            "38"
+          ],
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "43",
+          "name": "release_label_pkey",
+          "unique": true,
+          "fieldIds": [
+            "36"
+          ],
+          "createdAt": 1730286915591
+        }
+      ],
+      "color": "#ff9f74",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915591,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "44",
+      "name": "master_image",
+      "schema": "public",
+      "x": 406.402907436923,
+      "y": 1042.2208431334614,
+      "fields": [
+        {
+          "id": "45",
+          "name": "master_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "46",
+          "name": "type",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "47",
+          "name": "width",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "48",
+          "name": "height",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        }
+      ],
+      "indexes": [],
+      "color": "#42e0c0",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915590,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "49",
+      "name": "release_genre",
+      "schema": "public",
+      "x": 151.17097427514113,
+      "y": 640.9754923858935,
+      "fields": [
+        {
+          "id": "50",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('release_genre_id_seq'::regclass)",
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "51",
+          "name": "release_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "52",
+          "name": "genre",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        }
+      ],
+      "indexes": [
+        {
+          "id": "53",
+          "name": "release_genre_idx_release",
+          "unique": false,
+          "fieldIds": [
+            "51"
+          ],
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "54",
+          "name": "release_genre_pkey",
+          "unique": true,
+          "fieldIds": [
+            "50"
+          ],
+          "createdAt": 1730286915590
+        }
+      ],
+      "color": "#ff6b8a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915590,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "55",
+      "name": "release",
+      "schema": "public",
+      "x": 96.50299977405052,
+      "y": 117.4850011297471,
+      "fields": [
+        {
+          "id": "56",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "57",
+          "name": "title",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "58",
+          "name": "released",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "59",
+          "name": "country",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "60",
+          "name": "notes",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "61",
+          "name": "data_quality",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "62",
+          "name": "main",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "63",
+          "name": "master_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "64",
+          "name": "status",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        }
+      ],
+      "indexes": [
+        {
+          "id": "65",
+          "name": "release_pkey",
+          "unique": true,
+          "fieldIds": [
+            "56"
+          ],
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "66",
+          "name": "release_idx_master",
+          "unique": false,
+          "fieldIds": [
+            "63"
+          ],
+          "createdAt": 1730286915590
+        }
+      ],
+      "color": "#b067e9",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915590,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "67",
+      "name": "release_video",
+      "schema": "public",
+      "x": 460.3666807743441,
+      "y": -475.1793515637288,
+      "fields": [
+        {
+          "id": "68",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('release_video_id_seq'::regclass)",
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "69",
+          "name": "release_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "70",
+          "name": "duration",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "71",
+          "name": "title",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "72",
+          "name": "description",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "73",
+          "name": "uri",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915592
+        }
+      ],
+      "indexes": [
+        {
+          "id": "74",
+          "name": "release_video_pkey",
+          "unique": true,
+          "fieldIds": [
+            "68"
+          ],
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "75",
+          "name": "release_video_idx_release",
+          "unique": false,
+          "fieldIds": [
+            "69"
+          ],
+          "createdAt": 1730286915592
+        }
+      ],
+      "color": "#c05dcf",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "76",
+      "name": "release_image",
+      "schema": "public",
+      "x": 663.5712093913999,
+      "y": 1040.3940600059282,
+      "fields": [
+        {
+          "id": "77",
+          "name": "release_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "78",
+          "name": "type",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "79",
+          "name": "width",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "80",
+          "name": "height",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        }
+      ],
+      "indexes": [],
+      "color": "#4dee8a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915591,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "81",
+      "name": "label",
+      "schema": "public",
+      "x": 833.8461034208701,
+      "y": 568.4669597563752,
+      "fields": [
+        {
+          "id": "82",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1730286915587
+        },
+        {
+          "id": "83",
+          "name": "name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915587
+        },
+        {
+          "id": "84",
+          "name": "contact_info",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "85",
+          "name": "profile",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "86",
+          "name": "parent_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "87",
+          "name": "parent_name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "88",
+          "name": "data_quality",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        }
+      ],
+      "indexes": [
+        {
+          "id": "89",
+          "name": "label_idx_parent_label",
+          "unique": false,
+          "fieldIds": [
+            "86"
+          ],
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "90",
+          "name": "label_pkey",
+          "unique": true,
+          "fieldIds": [
+            "82"
+          ],
+          "createdAt": 1730286915588
+        }
+      ],
+      "color": "#ff6b8a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915588,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "91",
+      "name": "label_url",
+      "schema": "public",
+      "x": 1223.606797749979,
+      "y": 543.8926261462366,
+      "fields": [
+        {
+          "id": "92",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('label_url_id_seq'::regclass)",
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "93",
+          "name": "label_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "94",
+          "name": "url",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915588
+        }
+      ],
+      "indexes": [
+        {
+          "id": "95",
+          "name": "label_url_pkey",
+          "unique": true,
+          "fieldIds": [
+            "92"
+          ],
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "96",
+          "name": "label_url_idx_url",
+          "unique": false,
+          "fieldIds": [
+            "93"
+          ],
+          "createdAt": 1730286915588
+        }
+      ],
+      "color": "#8a61f5",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915588,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "97",
+      "name": "release_artist",
+      "schema": "public",
+      "x": 466.1351284004811,
+      "y": 139.68232208398263,
+      "fields": [
+        {
+          "id": "98",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('release_artist_id_seq'::regclass)",
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "99",
+          "name": "release_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "100",
+          "name": "artist_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "101",
+          "name": "artist_name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "102",
+          "name": "extra",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "103",
+          "name": "anv",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "104",
+          "name": "position",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "105",
+          "name": "join_string",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "106",
+          "name": "role",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "107",
+          "name": "tracks",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        }
+      ],
+      "indexes": [
+        {
+          "id": "108",
+          "name": "release_artist_idx_artist",
+          "unique": false,
+          "fieldIds": [
+            "100"
+          ],
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "109",
+          "name": "release_artist_idx_release",
+          "unique": false,
+          "fieldIds": [
+            "99"
+          ],
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "110",
+          "name": "release_artist_pkey",
+          "unique": true,
+          "fieldIds": [
+            "98"
+          ],
+          "createdAt": 1730286915590
+        }
+      ],
+      "color": "#ff6b8a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915590,
+      "diagramId": "l0leywelz8ft",
+      "width": 224
+    },
+    {
+      "id": "111",
+      "name": "release_identifier",
+      "schema": "public",
+      "x": 460,
+      "y": -720,
+      "fields": [
+        {
+          "id": "112",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('release_identifier_id_seq'::regclass)",
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "113",
+          "name": "release_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "114",
+          "name": "description",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "115",
+          "name": "type",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "116",
+          "name": "value",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915592
+        }
+      ],
+      "indexes": [
+        {
+          "id": "117",
+          "name": "release_identifier_pkey",
+          "unique": true,
+          "fieldIds": [
+            "112"
+          ],
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "118",
+          "name": "release_identifier_idx_release",
+          "unique": false,
+          "fieldIds": [
+            "113"
+          ],
+          "createdAt": 1730286915592
+        }
+      ],
+      "color": "#4dee8a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "119",
+      "name": "artist_url",
+      "schema": "public",
+      "x": 1300,
+      "y": -800,
+      "fields": [
+        {
+          "id": "120",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('artist_url_id_seq'::regclass)",
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "121",
+          "name": "artist_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "122",
+          "name": "url",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915591
+        }
+      ],
+      "indexes": [
+        {
+          "id": "123",
+          "name": "artist_url_pkey",
+          "unique": true,
+          "fieldIds": [
+            "120"
+          ],
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "124",
+          "name": "artist_url_idx_artist",
+          "unique": false,
+          "fieldIds": [
+            "121"
+          ],
+          "createdAt": 1730286915591
+        }
+      ],
+      "color": "#9ef07a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915591,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "125",
+      "name": "artist_namevariation",
+      "schema": "public",
+      "x": 500,
+      "y": -900,
+      "fields": [
+        {
+          "id": "126",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('artist_namevariation_id_seq'::regclass)",
+          "createdAt": 1730286915587
+        },
+        {
+          "id": "127",
+          "name": "artist_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915587
+        },
+        {
+          "id": "128",
+          "name": "name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915587
+        }
+      ],
+      "indexes": [
+        {
+          "id": "129",
+          "name": "artist_namevariation_pkey",
+          "unique": true,
+          "fieldIds": [
+            "126"
+          ],
+          "createdAt": 1730286915587
+        },
+        {
+          "id": "130",
+          "name": "artist_namevariation_idx_artist",
+          "unique": false,
+          "fieldIds": [
+            "127"
+          ],
+          "createdAt": 1730286915587
+        }
+      ],
+      "color": "#ffe374",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915587,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "131",
+      "name": "artist",
+      "schema": "public",
+      "x": 899.9999999999999,
+      "y": -650,
+      "fields": [
+        {
+          "id": "132",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "133",
+          "name": "name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "134",
+          "name": "realname",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "135",
+          "name": "profile",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "136",
+          "name": "data_quality",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915589
+        }
+      ],
+      "indexes": [
+        {
+          "id": "137",
+          "name": "artist_pkey",
+          "unique": true,
+          "fieldIds": [
+            "132"
+          ],
+          "createdAt": 1730286915589
+        }
+      ],
+      "color": "#4dee8a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915589,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "138",
+      "name": "release_format",
+      "schema": "public",
+      "x": -389.4146589884574,
+      "y": 285.6710284267525,
+      "fields": [
+        {
+          "id": "139",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('release_format_id_seq'::regclass)",
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "140",
+          "name": "release_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "141",
+          "name": "name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "142",
+          "name": "qty",
+          "type": {
+            "id": "numeric",
+            "name": "numeric"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "143",
+          "name": "text_string",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "144",
+          "name": "descriptions",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        }
+      ],
+      "indexes": [
+        {
+          "id": "145",
+          "name": "release_format_idx_release",
+          "unique": false,
+          "fieldIds": [
+            "140"
+          ],
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "146",
+          "name": "release_format_pkey",
+          "unique": true,
+          "fieldIds": [
+            "139"
+          ],
+          "createdAt": 1730286915591
+        }
+      ],
+      "color": "#b067e9",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915591,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "147",
+      "name": "label_image",
+      "schema": "public",
+      "x": 111.10424226939313,
+      "y": 1033.6956810228737,
+      "fields": [
+        {
+          "id": "148",
+          "name": "label_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "149",
+          "name": "type",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "150",
+          "name": "width",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "151",
+          "name": "height",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915589
+        }
+      ],
+      "indexes": [],
+      "color": "#42e0c0",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915589,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "152",
+      "name": "release_company",
+      "schema": "public",
+      "x": 463.5042209988919,
+      "y": -172.81258715435837,
+      "fields": [
+        {
+          "id": "153",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('release_company_id_seq'::regclass)",
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "154",
+          "name": "release_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "155",
+          "name": "company_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "156",
+          "name": "company_name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "157",
+          "name": "entity_type",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "158",
+          "name": "entity_type_name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "159",
+          "name": "uri",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915592
+        }
+      ],
+      "indexes": [
+        {
+          "id": "160",
+          "name": "release_company_idx_release",
+          "unique": false,
+          "fieldIds": [
+            "154"
+          ],
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "161",
+          "name": "release_company_pkey",
+          "unique": true,
+          "fieldIds": [
+            "153"
+          ],
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "162",
+          "name": "release_company_idx_company",
+          "unique": false,
+          "fieldIds": [
+            "155"
+          ],
+          "createdAt": 1730286915592
+        }
+      ],
+      "color": "#b067e9",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "163",
+      "name": "release_style",
+      "schema": "public",
+      "x": -233.69097097176495,
+      "y": 582.8741790857185,
+      "fields": [
+        {
+          "id": "164",
+          "name": "release_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915590
+        },
+        {
+          "id": "165",
+          "name": "style",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915590
+        }
+      ],
+      "indexes": [
+        {
+          "id": "166",
+          "name": "release_style_idx_release",
+          "unique": false,
+          "fieldIds": [
+            "164"
+          ],
+          "createdAt": 1730286915590
+        }
+      ],
+      "color": "#9ef07a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915590,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "167",
+      "name": "group_member",
+      "schema": "public",
+      "x": 899.9999999999998,
+      "y": -1150,
+      "fields": [
+        {
+          "id": "168",
+          "name": "group_artist_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915587
+        },
+        {
+          "id": "169",
+          "name": "member_artist_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915587
+        },
+        {
+          "id": "170",
+          "name": "member_name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915587
+        }
+      ],
+      "indexes": [
+        {
+          "id": "171",
+          "name": "group_member_idx_group",
+          "unique": false,
+          "fieldIds": [
+            "168"
+          ],
+          "createdAt": 1730286915587
+        },
+        {
+          "id": "172",
+          "name": "group_member_idx_member",
+          "unique": false,
+          "fieldIds": [
+            "169"
+          ],
+          "createdAt": 1730286915587
+        }
+      ],
+      "color": "#9ef07a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915587,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "173",
+      "name": "release_track_artist",
+      "schema": "public",
+      "x": -388.95410009920573,
+      "y": -189.79690387788003,
+      "fields": [
+        {
+          "id": "174",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('release_track_artist_id_seq'::regclass)",
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "175",
+          "name": "track_id",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "176",
+          "name": "release_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "177",
+          "name": "track_sequence",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "178",
+          "name": "artist_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "179",
+          "name": "artist_name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "180",
+          "name": "extra",
+          "type": {
+            "id": "boolean",
+            "name": "boolean"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "181",
+          "name": "anv",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "182",
+          "name": "position",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "183",
+          "name": "join_string",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "184",
+          "name": "role",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "185",
+          "name": "tracks",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        }
+      ],
+      "indexes": [
+        {
+          "id": "186",
+          "name": "release_track_artist_pkey",
+          "unique": true,
+          "fieldIds": [
+            "174"
+          ],
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "187",
+          "name": "release_track_artist_idx_artist",
+          "unique": false,
+          "fieldIds": [
+            "178"
+          ],
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "188",
+          "name": "release_track_artist_idx_track_sequence",
+          "unique": false,
+          "fieldIds": [
+            "177"
+          ],
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "189",
+          "name": "release_track_artist_idx_release",
+          "unique": false,
+          "fieldIds": [
+            "176"
+          ],
+          "createdAt": 1730286915592
+        },
+        {
+          "id": "190",
+          "name": "release_track_artist_idx_track_id",
+          "unique": false,
+          "fieldIds": [
+            "175"
+          ],
+          "createdAt": 1730286915592
+        }
+      ],
+      "color": "#7175fa",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "191",
+      "name": "master_video",
+      "schema": "public",
+      "x": 1640.1058899038417,
+      "y": 532.4205825721187,
+      "fields": [
+        {
+          "id": "192",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('master_video_id_seq'::regclass)",
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "193",
+          "name": "master_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "194",
+          "name": "duration",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "195",
+          "name": "title",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "196",
+          "name": "description",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "197",
+          "name": "uri",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915589
+        }
+      ],
+      "indexes": [
+        {
+          "id": "198",
+          "name": "master_video_pkey",
+          "unique": true,
+          "fieldIds": [
+            "192"
+          ],
+          "createdAt": 1730286915589
+        },
+        {
+          "id": "199",
+          "name": "master_video_idx_master",
+          "unique": false,
+          "fieldIds": [
+            "193"
+          ],
+          "createdAt": 1730286915589
+        }
+      ],
+      "color": "#9ef07a",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915589,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "200",
+      "name": "release_track",
+      "schema": "public",
+      "x": -390.6290347254625,
+      "y": -552.5209990571462,
+      "fields": [
+        {
+          "id": "201",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "default": "nextval('release_track_id_seq'::regclass)",
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "202",
+          "name": "release_id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "203",
+          "name": "sequence",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "204",
+          "name": "position",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "205",
+          "name": "parent",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "206",
+          "name": "title",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "207",
+          "name": "duration",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "208",
+          "name": "track_id",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915591
+        }
+      ],
+      "indexes": [
+        {
+          "id": "209",
+          "name": "release_track_idx_release",
+          "unique": false,
+          "fieldIds": [
+            "202"
+          ],
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "210",
+          "name": "release_track_idx_parent",
+          "unique": false,
+          "fieldIds": [
+            "205"
+          ],
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "211",
+          "name": "release_track_idx_sequence",
+          "unique": false,
+          "fieldIds": [
+            "203"
+          ],
+          "createdAt": 1730286915591
+        },
+        {
+          "id": "212",
+          "name": "release_track_pkey",
+          "unique": true,
+          "fieldIds": [
+            "201"
+          ],
+          "createdAt": 1730286915591
+        }
+      ],
+      "color": "#c05dcf",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915591,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "213",
+      "name": "master",
+      "schema": "public",
+      "x": 1323.1804718485953,
+      "y": 131.82984388750128,
+      "fields": [
+        {
+          "id": "214",
+          "name": "id",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": true,
+          "unique": true,
+          "nullable": false,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "215",
+          "name": "title",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "216",
+          "name": "year",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "217",
+          "name": "main_release",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1730286915588
+        },
+        {
+          "id": "218",
+          "name": "data_quality",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1730286915588
+        }
+      ],
+      "indexes": [
+        {
+          "id": "219",
+          "name": "master_pkey",
+          "unique": true,
+          "fieldIds": [
+            "214"
+          ],
+          "createdAt": 1730286915588
+        }
+      ],
+      "color": "#ff9f74",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1730286915588,
+      "diagramId": "l0leywelz8ft",
+      "width": 224
+    }
+  ],
+  "relationships": [
+    {
+      "id": "220",
+      "name": "artist_alias_fk_alias_artist",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "24",
+      "targetTableId": "131",
+      "sourceFieldId": "27",
+      "targetFieldId": "132",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "221",
+      "name": "artist_alias_fk_artist",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "24",
+      "targetTableId": "131",
+      "sourceFieldId": "25",
+      "targetFieldId": "132",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "222",
+      "name": "artist_namevariation_fk_artist",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "125",
+      "targetTableId": "131",
+      "sourceFieldId": "127",
+      "targetFieldId": "132",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "223",
+      "name": "artist_url_fk_artist",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "119",
+      "targetTableId": "131",
+      "sourceFieldId": "121",
+      "targetFieldId": "132",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "224",
+      "name": "group_member_fk_group",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "167",
+      "targetTableId": "131",
+      "sourceFieldId": "168",
+      "targetFieldId": "132",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "225",
+      "name": "label_fk_parent_label",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "81",
+      "targetTableId": "81",
+      "sourceFieldId": "86",
+      "targetFieldId": "82",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "226",
+      "name": "label_url_fk_label",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "91",
+      "targetTableId": "81",
+      "sourceFieldId": "93",
+      "targetFieldId": "82",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "227",
+      "name": "master_artist_fk_master",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "12",
+      "targetTableId": "213",
+      "sourceFieldId": "14",
+      "targetFieldId": "214",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "228",
+      "name": "master_genre_fk_master",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "1",
+      "targetTableId": "213",
+      "sourceFieldId": "3",
+      "targetFieldId": "214",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "229",
+      "name": "master_style_fk_master",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "29",
+      "targetTableId": "213",
+      "sourceFieldId": "31",
+      "targetFieldId": "214",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "230",
+      "name": "master_video_fk_master",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "191",
+      "targetTableId": "213",
+      "sourceFieldId": "193",
+      "targetFieldId": "214",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "231",
+      "name": "release_artist_fk_release",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "97",
+      "targetTableId": "55",
+      "sourceFieldId": "99",
+      "targetFieldId": "56",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "232",
+      "name": "release_company_fk_release",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "152",
+      "targetTableId": "55",
+      "sourceFieldId": "154",
+      "targetFieldId": "56",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915593,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "233",
+      "name": "release_format_fk_release",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "138",
+      "targetTableId": "55",
+      "sourceFieldId": "140",
+      "targetFieldId": "56",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "234",
+      "name": "release_genre_fk_release",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "49",
+      "targetTableId": "55",
+      "sourceFieldId": "51",
+      "targetFieldId": "56",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "235",
+      "name": "release_identifier_fk_release",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "111",
+      "targetTableId": "55",
+      "sourceFieldId": "113",
+      "targetFieldId": "56",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915593,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "236",
+      "name": "release_label_fk_label",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "35",
+      "targetTableId": "81",
+      "sourceFieldId": "38",
+      "targetFieldId": "82",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "237",
+      "name": "release_label_fk_release",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "35",
+      "targetTableId": "55",
+      "sourceFieldId": "37",
+      "targetFieldId": "56",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "238",
+      "name": "release_style_fk_release",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "163",
+      "targetTableId": "55",
+      "sourceFieldId": "164",
+      "targetFieldId": "56",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915592,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "239",
+      "name": "release_track_artist_fk_release",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "173",
+      "targetTableId": "55",
+      "sourceFieldId": "176",
+      "targetFieldId": "56",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915593,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "240",
+      "name": "release_track_fk_release",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "200",
+      "targetTableId": "55",
+      "sourceFieldId": "202",
+      "targetFieldId": "56",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915593,
+      "diagramId": "l0leywelz8ft"
+    },
+    {
+      "id": "241",
+      "name": "release_video_fk_release",
+      "sourceSchema": "public",
+      "targetSchema": "public",
+      "sourceTableId": "67",
+      "targetTableId": "55",
+      "sourceFieldId": "69",
+      "targetFieldId": "56",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1730286915593,
+      "diagramId": "l0leywelz8ft"
+    }
+  ],
+  "dependencies": []
+}

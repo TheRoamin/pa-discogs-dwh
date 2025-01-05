@@ -1,0 +1,441 @@
+{
+  "id": "0",
+  "name": "ziel-db-schema",
+  "createdAt": "2025-01-05T16:07:01.486Z",
+  "updatedAt": "2025-01-05T16:07:01.486Z",
+  "databaseType": "postgresql",
+  "tables": [
+    {
+      "id": "1",
+      "name": "artists",
+      "schema": "public",
+      "x": 500,
+      "y": 100,
+      "fields": [
+        {
+          "id": "2",
+          "name": "artid",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1731498897720
+        },
+        {
+          "id": "3",
+          "name": "name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1731498897720
+        },
+        {
+          "id": "4",
+          "name": "aka",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897720
+        },
+        {
+          "id": "5",
+          "name": "type",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "'0'::text",
+          "createdAt": 1731498897720
+        },
+        {
+          "id": "6",
+          "name": "profile",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897720
+        },
+        {
+          "id": "7",
+          "name": "roles",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897720
+        },
+        {
+          "id": "8",
+          "name": "genres",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897720
+        },
+        {
+          "id": "9",
+          "name": "groups",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897720
+        },
+        {
+          "id": "10",
+          "name": "memids",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897720
+        },
+        {
+          "id": "11",
+          "name": "urls",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897721
+        },
+        {
+          "id": "12",
+          "name": "hasimg",
+          "type": {
+            "id": "smallint",
+            "name": "smallint"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "'0'::smallint",
+          "createdAt": 1731498897721
+        },
+        {
+          "id": "13",
+          "name": "country",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897721
+        },
+        {
+          "id": "14",
+          "name": "place",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897721
+        },
+        {
+          "id": "15",
+          "name": "lifespan",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897721
+        },
+        {
+          "id": "16",
+          "name": "instrs",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897721
+        },
+        {
+          "id": "17",
+          "name": "releases",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897721
+        }
+      ],
+      "indexes": [],
+      "color": "#b067e9",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1731498897721,
+      "diagramId": "l0leywels60j"
+    },
+    {
+      "id": "18",
+      "name": "releases",
+      "schema": "public",
+      "x": 256.70200307587254,
+      "y": 99.33600846154292,
+      "fields": [
+        {
+          "id": "19",
+          "name": "relid",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "20",
+          "name": "name",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "21",
+          "name": "title",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": false,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "22",
+          "name": "notes",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "23",
+          "name": "albartists",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "24",
+          "name": "genres",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "25",
+          "name": "styles",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "26",
+          "name": "artists",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "27",
+          "name": "label",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "28",
+          "name": "hasimg",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "0",
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "29",
+          "name": "urls",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "30",
+          "name": "videos",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "31",
+          "name": "trcnt",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "32",
+          "name": "tracks",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897719
+        },
+        {
+          "id": "33",
+          "name": "country",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897720
+        },
+        {
+          "id": "34",
+          "name": "year",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "createdAt": 1731498897720
+        },
+        {
+          "id": "35",
+          "name": "type",
+          "type": {
+            "id": "integer",
+            "name": "integer"
+          },
+          "primaryKey": false,
+          "unique": false,
+          "nullable": true,
+          "default": "0",
+          "createdAt": 1731498897720
+        }
+      ],
+      "indexes": [],
+      "color": "#8a61f5",
+      "isView": false,
+      "isMaterializedView": false,
+      "createdAt": 1731498897720,
+      "diagramId": "l0leywels60j"
+    }
+  ],
+  "relationships": [],
+  "dependencies": []
+}

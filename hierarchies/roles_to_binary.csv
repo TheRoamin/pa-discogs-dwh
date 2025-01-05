@@ -1,0 +1,42 @@
+value;role;name
+0;Unknown role;Management
+0;Unknown role;Featuring
+0;Unknown role;Performer
+0;Unknown role;Lacquer Cut By
+1;Musician;
+2;Singer;
+4;Rapper;
+8;Composer;Music By
+8;Composer;Composed By
+16;Songwriter;Written-By
+16;Songwriter;Written By
+32;Bandleader;
+64;Disc Jockey;DJ Mix
+128;Arranger;Arranged By
+128;Arranger;Rearranged
+256;Producer;Produced By
+256;Producer;Producer
+256;Producer;Co-producer
+256;Producer;Executive-producer
+256;Producer;Executive Producer
+256;Producer;Compiled By
+512;Conductor;
+1024;Programmer;Programmed By
+2048;Dancer;
+4096;Actor;
+8192;Teacher;
+16384;Photographer;Photography By
+16384;Photographer;Photography
+32768;Designer;Design
+32768;Designer;Artwork
+32768;Designer;Graphics
+32768;Designer;Illustration
+32768;Designer;Cover
+32768;Designer;Layout
+32768;Designer;Art Direction
+65536;Sound Engineer;Mastered By
+65536;Sound Engineer;Engineer
+65536;Sound Engineer;Mixed By
+65536;Sound Engineer;Remix
+65536;Sound Engineer;Recorded By
+65536;Sound Engineer;Edited By
